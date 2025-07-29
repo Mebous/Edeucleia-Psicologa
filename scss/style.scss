@@ -1,0 +1,202 @@
+@font-face {
+  font-family: "Cramaten";
+  src: url("../font/Cramaten.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Brightontwo";
+  src: url("../font/BrightontwoSlab.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Smokey";
+  src: url("../font/Smokey.ttf") format("truetype");
+}
+
+// Neutros escuros e claros
+$color-charcoal: #2e2a26;
+$color-beige: #f5f2ec;
+$color-sand: #e5e0d8;
+$color-tan: #e5d2b8;
+
+// Terrosos / naturais
+$color-olive: #6a7c5f;
+$color-brown: hsl(36, 33%, 34%);
+
+// Cores principais
+$color-red-earth: #a14d4d; // terroso, queimado
+$color-yellow-mustard: #c9a74e; // mostarda suave
+$color-green-olive-dark: #4f6a4a; // oliva escuro
+
+// Versões claras
+$color-red-light: #e0c5c5;
+$color-yellow-light: #e9e2cd;
+$color-green-light: #b4c7b7;
+
+$primary: #4f6a4a;
+$light: #f5f2ec;
+$dark: #2e2a26;
+
+body {
+  overflow-x: hidden;
+  min-height: 3 * 100vh;
+  max-width: 100vw;
+}
+
+img {
+  object-fit: contain;
+}
+
+h1,
+.text-body-emphasis {
+  color: $dark;
+  font-family: "Cramaten", sans-serif;
+  letter-spacing: 0.2rem;
+}
+
+p {
+  text-align: justify;
+}
+
+section {
+  .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .card-header {
+    background-color: transparent;
+    border: 0;
+  }
+}
+
+.hero-section {
+  background-color: $color-tan;
+  min-height: 95vh;
+
+  img {
+    $size: 500px;
+    max-width: 2/2 * $size;
+    max-height: 3/2 * $size;
+  }
+
+  h1 {
+    font-size: 8rem;
+  }
+}
+
+.section-target-audience {
+  .card {
+    width: 30%;
+    position: relative;
+    top: -8rem;
+
+    h1 {
+      min-height: 160px;
+    }
+
+    p {
+      max-width: 72%;
+      text-align: justify;
+    }
+
+    .wrp-img {
+      display: flex;
+      justify-content: right;
+      max-height: 160px;
+    }
+
+    img {
+      height: 400px;
+      position: relative;
+      top: -100px;
+      left: 100px;
+    }
+  }
+
+  .cards-wrapper {
+    justify-content: center;
+    max-width: 100vw;
+  }
+
+  .card-header {
+    font-size: 4rem;
+  }
+
+  .card:nth-child(1) {
+    background-color: $color-red-earth;
+  }
+  .card:nth-child(2) {
+    background-color: $color-yellow-mustard;
+  }
+  .card:nth-child(3) {
+    background-color: $color-green-olive-dark;
+  }
+}
+
+.professional-presentation {
+  .btn-link {
+    text-decoration: none;
+    text-align: left;
+  }
+}
+
+.services-offered {
+  background-image: url("../imgs/leaves-1868742_1920.jpg");
+
+  .flag {
+    background-color: $primary;
+    width: 52px;
+    height: 52px;
+    border-radius: 0.2rem;
+  }
+  svg {
+    fill: $color-beige;
+  }
+
+  .wrp-cards {
+    gap: 2rem;
+  }
+
+  .card {
+    min-width: 300px;
+    flex: 1;
+  }
+}
+
+@media (max-width: 1340px) {
+  .section-target-audience {
+    .cards-wrapper {
+      flex-direction: column !important;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .card {
+      max-width: 84vw;
+      width: 100%;
+      justify-content: center;
+
+      margin-bottom: 1rem;
+      top: 0;
+
+      p {
+        max-width: 100%;
+      }
+
+      .wrp-img {
+        height: 300px;
+        width: 100%;
+        max-height: none;
+      }
+
+      img {
+        height: 400px;
+        top: -20px;
+        left: 0;
+      }
+    }
+  }
+}
+
+@import "../node_modules/bootstrap/scss/bootstrap";
