@@ -13,6 +13,12 @@
   src: url("../font/Smokey.ttf") format("truetype");
 }
 
+// Box shadows
+$box-shadow-inset: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+  rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+$box-shadow-regular: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+  rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+
 // Neutros escuros e claros
 $color-charcoal: #2e2a26;
 $color-beige: #f5f2ec;
@@ -39,7 +45,6 @@ $dark: #2e2a26;
 
 body {
   overflow-x: hidden;
-  min-height: 3 * 100vh;
   max-width: 100vw;
 }
 
@@ -144,23 +149,14 @@ section {
 .services-offered {
   background-image: url("../imgs/leaves-1868742_1920.jpg");
 
-  .flag {
-    background-color: $primary;
-    width: 52px;
-    height: 52px;
-    border-radius: 0.2rem;
+  box-shadow: $box-shadow-inset;
+
+  .container {
+    box-shadow: $box-shadow-regular;
   }
+
   svg {
     fill: $color-beige;
-  }
-
-  .wrp-cards {
-    gap: 2rem;
-  }
-
-  .card {
-    min-width: 300px;
-    flex: 1;
   }
 }
 
@@ -178,7 +174,7 @@ section {
       justify-content: center;
 
       margin-bottom: 1rem;
-      top: 0;
+      top: 40px;
 
       p {
         max-width: 100%;
@@ -197,6 +193,10 @@ section {
       }
     }
   }
+}
+
+.feature-icon-small {
+  width: min-content;
 }
 
 @import "../node_modules/bootstrap/scss/bootstrap";

@@ -13,7 +13,6 @@
 }
 body {
   overflow-x: hidden;
-  min-height: 300vh;
   max-width: 100vw;
 }
 
@@ -101,22 +100,13 @@ section .card-header {
 
 .services-offered {
   background-image: url("../imgs/leaves-1868742_1920.jpg");
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 }
-.services-offered .flag {
-  background-color: #4f6a4a;
-  width: 52px;
-  height: 52px;
-  border-radius: 0.2rem;
+.services-offered .container {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
 .services-offered svg {
   fill: #f5f2ec;
-}
-.services-offered .wrp-cards {
-  gap: 2rem;
-}
-.services-offered .card {
-  min-width: 300px;
-  flex: 1;
 }
 
 @media (max-width: 1340px) {
@@ -130,7 +120,7 @@ section .card-header {
     width: 100%;
     justify-content: center;
     margin-bottom: 1rem;
-    top: 0;
+    top: 40px;
   }
   .section-target-audience .card p {
     max-width: 100%;
@@ -146,6 +136,11 @@ section .card-header {
     left: 0;
   }
 }
+.feature-icon-small {
+  width: -moz-min-content;
+  width: min-content;
+}
+
 /*!
  * Bootstrap  v5.3.7 (https://getbootstrap.com/)
  * Copyright 2011-2025 The Bootstrap Authors
@@ -262,7 +257,7 @@ section .card-header {
   --bs-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   --bs-box-shadow-sm: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
   --bs-box-shadow-lg: 0 1rem 3rem rgba(0, 0, 0, 0.175);
-  --bs-box-shadow-inset: inset 0 1px 2px rgba(0, 0, 0, 0.075);
+  --bs-box-shadow-inset: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
   --bs-focus-ring-width: 0.25rem;
   --bs-focus-ring-opacity: 0.25;
   --bs-focus-ring-color: rgba(79, 106, 74, 0.25);
