@@ -63,16 +63,19 @@ p {
   text-align: justify;
 }
 
-section {
-  .row {
-    margin-left: 0;
-    margin-right: 0;
-  }
-
+.card {
   .card-header {
     background-color: transparent;
     border: 0;
   }
+}
+
+.feature-icon-small {
+  width: min-content;
+}
+
+.fit-content {
+  width: fit-content;
 }
 
 .hero-section {
@@ -92,40 +95,15 @@ section {
 
 .section-target-audience {
   .card {
-    width: 30%;
-    position: relative;
-    top: -8rem;
+    max-width: 30%;
 
     h1 {
-      min-height: 160px;
-    }
-
-    p {
-      max-width: 72%;
-      text-align: justify;
-    }
-
-    .wrp-img {
-      display: flex;
-      justify-content: right;
-      max-height: 160px;
+      font-size: 4rem;
     }
 
     img {
-      height: 400px;
-      position: relative;
-      top: -100px;
-      left: 100px;
+      max-height: 800px;
     }
-  }
-
-  .cards-wrapper {
-    justify-content: center;
-    max-width: 100vw;
-  }
-
-  .card-header {
-    font-size: 4rem;
   }
 
   .card:nth-child(1) {
@@ -139,11 +117,9 @@ section {
   }
 }
 
-.professional-presentation {
-  .btn-link {
-    text-decoration: none;
-    text-align: left;
-  }
+.btn-link {
+  text-decoration: none;
+  text-align: left;
 }
 
 .services-offered {
@@ -160,43 +136,45 @@ section {
   }
 }
 
-@media (max-width: 1340px) {
-  .section-target-audience {
-    .cards-wrapper {
-      flex-direction: column !important;
-      justify-content: center;
-      align-items: center;
-    }
+// .attendance-and-call-to-action {
+//   svg {
+//     fill: $light;
+//   }
+// }
 
-    .card {
-      max-width: 84vw;
-      width: 100%;
-      justify-content: center;
+// @media (max-width: 1340px) {
+//   .section-target-audience {
+//     .cards-wrapper {
+//       flex-direction: column !important;
+//       justify-content: center;
+//       align-items: center;
+//     }
 
-      margin-bottom: 1rem;
-      top: 40px;
+//     .card {
+//       max-width: 84vw;
+//       width: 100%;
+//       justify-content: center;
 
-      p {
-        max-width: 100%;
-      }
+//       margin-bottom: 1rem;
+//       top: 40px;
 
-      .wrp-img {
-        height: 300px;
-        width: 100%;
-        max-height: none;
-      }
+//       p {
+//         max-width: 100%;
+//       }
 
-      img {
-        height: 400px;
-        top: -20px;
-        left: 0;
-      }
-    }
-  }
-}
+//       .wrp-img {
+//         height: 300px;
+//         width: 100%;
+//         max-height: none;
+//       }
 
-.feature-icon-small {
-  width: min-content;
-}
+//       img {
+//         height: 400px;
+//         top: -20px;
+//         left: 0;
+//       }
+//     }
+//   }
+// }
 
 @import "../node_modules/bootstrap/scss/bootstrap";
