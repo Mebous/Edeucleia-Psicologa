@@ -4,18 +4,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Edeucleia</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
-    />
+    /> -->
 
     <link rel="stylesheet" href="/css/style.css" />
   </head>
 
-  <body class="bg-light row justify-content-center">
-    <section class="hero-section px-5 pt-5">
+  <body class="bg-light d-flex flex-column align-items-center">
+    <section class="hero-section px-5 pt-5" id="hero-section">
       <div
         class="row g-5 flex-row-reverse align-items-center justify-content-center"
       >
@@ -34,60 +34,51 @@
             resiliência e resultados práticos.
           </p>
 
-          <button class="btn btn-primary">
+          <a
+            href="https://wa.me/19953287981"
+            target="_blank"
+            class="btn btn-primary"
+          >
             Iniciar uma nova fase com apoio profissional
-          </button>
+          </a>
         </div>
       </div>
     </section>
 
     <section
-      class="section-target-audience container my-5 d-flex align-items-center"
+      class="section-target-audience container d-flex mt-3 mx-5 align-items-center justify-content-center"
+      id="section-target-audience"
     >
-      <div class="container d-flex flex-row gap-5">
-        <div class="card d-flex flex-row p-4 align-items-center">
-          <div class="card-header">
-            <h1>Retome o Controle</h1>
-            <p>
-              Entenda suas emoções, encontre clareza e reconquiste seu
-              equilíbrio mental e emocional.
-            </p>
-          </div>
-          <div class="card-body">
-            <img src="imgs/1-sad.png" alt="" class="img-fluid" />
-          </div>
+      <div class="row gap-5 m-3 align-items-center justify-content-around">
+        <div class="card d-flex col-lg-3 h-100">
+          <h1 class="card-header">Retome o Controle</h1>
+          <p class="card-body">
+            Entenda suas emoções, encontre clareza e reconquiste seu equilíbrio
+            mental e emocional.
+          </p>
         </div>
 
-        <div class="card flex-row align-items-center">
-          <div class="card-header">
-            <h1>Suporte em Mudanças</h1>
-            <p>
-              Enfrente perdas, dúvidas e conflitos com acolhimento e ferramentas
-              para seguir confiante.
-            </p>
-          </div>
-          <div class="card-body">
-            <img src="imgs/2-ansioso.png" alt="" class="img-fluid" />
-          </div>
+        <div class="card d-flex col-lg-3 h-100">
+          <h1 class="card-header">Suporte em Mudanças</h1>
+          <p class="card-body">
+            Enfrente perdas, dúvidas e conflitos com acolhimento e ferramentas
+            para seguir confiante.
+          </p>
         </div>
 
-        <div class="card flex-row align-items-center">
-          <div class="card-header">
-            <h1>Desenvolva seu Potencial</h1>
-            <p>
-              Explore suas forças internas, fortaleça sua inteligência emocional
-              e viva com autenticidade.
-            </p>
-          </div>
-          <div class="card-body">
-            <img src="imgs/3-feliz.png" alt="" class="img-fluid" />
-          </div>
+        <div class="card d-flex col-lg-3 h-100">
+          <h1 class="card-header">Desenvolva seu Potencial</h1>
+          <p class="card-body">
+            Explore suas forças internas, fortaleça sua inteligência emocional e
+            viva com autenticidade.
+          </p>
         </div>
       </div>
     </section>
 
     <section
       class="professional-presentation my-5 p-5 align-items-center justify-content-center"
+      id="professional-presentation"
     >
       <div class="row g-5 align-items-center justify-content-center">
         <img
@@ -97,7 +88,7 @@
         />
 
         <div class="col-lg-4 align-items-center">
-          <h1 class="display-5 lh-1 mb-3">Aqui para ouvir você</h1>
+          <h1 class="display-5 lh-1 mb-3">Pronta para ouvir você</h1>
           <p class="lead">
             Sou Edeucleia, psicóloga com foco em Terapia
             Cognitivo-Comportamental (TCC) — abordagem científica voltada para
@@ -112,8 +103,14 @@
             construírem vidas mais leves, estáveis e com propósito.
           </p>
           <div class="row">
-            <a class="btn btn-link"> 🎓 Conheça minha formação completa </a>
-            <a class="btn btn-link">
+            <a href="my_education.html" class="btn btn-link text-start">
+              🎓 Conheça minha formação completa
+            </a>
+            <a
+              href="https://wa.me/19953287981"
+              target="_blank"
+              class="btn btn-link text-start"
+            >
               💬 Agende uma conversa inicial sem compromisso
             </a>
           </div>
@@ -121,10 +118,13 @@
       </div>
     </section>
 
-    <section class="services-offered y-3 p-5">
-      <div class="container bg-light rounded-2 p-5">
+    <section
+      class="services-offered w-100 py-5 px-4 p-lg-5"
+      id="services-offered"
+    >
+      <div class="container bg-light rounded-2 p-4 p-lg-5">
         <div
-          class="row row-cols-1 row-cols-md-2 align-items-md-center g-5 py-5"
+          class="row row-cols-1 row-cols-md-2 g-5 p-lg-4 align-items-md-center"
         >
           <div class="col d-flex flex-column align-items-start gap-2">
             <h2 class="fw-bold text-body-emphasis">
@@ -137,77 +137,91 @@
               individualidade, com foco em promover bem-estar de forma clara,
               acessível e transformadora.
             </p>
-            <a href="#" class="btn btn-primary btn-lg">Primary button</a>
+            <a
+              href="https://wa.me/19953287981"
+              target="_blank"
+              class="btn btn-primary btn-sm btn-lg"
+            >
+              Agendar consulta
+            </a>
           </div>
           <div class="col">
             <div class="row row-cols-1 row-cols-sm-2 g-4">
               <div class="col d-flex flex-column gap-2">
-                <div
-                  class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3 p-2"
-                >
-                  <svg class="bi" width="1em" height="1em" aria-hidden="true">
-                    <use
-                      xlink:href="node_modules\bootstrap-icons\bootstrap-icons.svg#collection"
-                    ></use>
-                  </svg>
+                <div class="d-flex gap-3 align-items-center">
+                  <div
+                    class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3 p-2"
+                  >
+                    <svg class="bi" width="1em" height="1em" aria-hidden="true">
+                      <use
+                        xlink:href="node_modules\bootstrap-icons\bootstrap-icons.svg#clipboard-check-fill"
+                      ></use>
+                    </svg>
+                  </div>
+                  <h4 class="fw-semibold mb-0 text-body-emphasis">
+                    Avaliação Inicial
+                  </h4>
                 </div>
-                <h4 class="fw-semibold mb-0 text-body-emphasis">
-                  Avaliação Inicial
-                </h4>
                 <p class="text-body-secondary">
                   Primeiro encontro para mapear suas queixas, histórico e metas
                   terapêuticas.
                 </p>
               </div>
               <div class="col d-flex flex-column gap-2">
-                <div
-                  class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3 p-2"
-                >
-                  <svg class="bi" width="1em" height="1em" aria-hidden="true">
-                    <use
-                      xlink:href="node_modules\bootstrap-icons\bootstrap-icons.svg#gear-fill"
-                    ></use>
-                  </svg>
+                <div class="d-flex gap-3 align-items-center">
+                  <div
+                    class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3 p-2"
+                  >
+                    <svg class="bi" width="1em" height="1em" aria-hidden="true">
+                      <use
+                        xlink:href="node_modules\bootstrap-icons\bootstrap-icons.svg#person-fill"
+                      ></use>
+                    </svg>
+                  </div>
+                  <h4 class="fw-semibold mb-0 text-body-emphasis">
+                    Psicoterapia Individual
+                  </h4>
                 </div>
-                <h4 class="fw-semibold mb-0 text-body-emphasis">
-                  Psicoterapia Individual
-                </h4>
                 <p class="text-body-secondary">
                   Atendimento semanal voltado a quem lida com ansiedade,
                   depressão, baixa autoestima, estresse ou conflitos pessoais.
                 </p>
               </div>
               <div class="col d-flex flex-column gap-2">
-                <div
-                  class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3 p-2"
-                >
-                  <svg class="bi" width="1em" height="1em" aria-hidden="true">
-                    <use
-                      xlink:href="node_modules\bootstrap-icons\bootstrap-icons.svg#speedometer"
-                    ></use>
-                  </svg>
+                <div class="d-flex gap-3 align-items-center">
+                  <div
+                    class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3 p-2"
+                  >
+                    <svg class="bi" width="1em" height="1em" aria-hidden="true">
+                      <use
+                        xlink:href="node_modules\bootstrap-icons\bootstrap-icons.svg#search"
+                      ></use>
+                    </svg>
+                  </div>
+                  <h4 class="fw-semibold mb-0 text-body-emphasis">
+                    Avaliação Neuropsicológica
+                  </h4>
                 </div>
-                <h4 class="fw-semibold mb-0 text-body-emphasis">
-                  Avaliação Neuropsicológica
-                </h4>
                 <p class="text-body-secondary">
                   Exame clínico que investiga funções como memória, atenção,
                   linguagem e raciocínio.
                 </p>
               </div>
               <div class="col d-flex flex-column gap-2">
-                <div
-                  class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3 p-2"
-                >
-                  <svg class="bi" width="1em" height="1em" aria-hidden="true">
-                    <use
-                      xlink:href="node_modules\bootstrap-icons\bootstrap-icons.svg#table"
-                    ></use>
-                  </svg>
+                <div class="d-flex gap-3 align-items-center">
+                  <div
+                    class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3 p-2"
+                  >
+                    <svg class="bi" width="1em" height="1em" aria-hidden="true">
+                      <use
+                        xlink:href="node_modules\bootstrap-icons\bootstrap-icons.svg#briefcase-fill"
+                      ></use>
+                    </svg>
+                  </div>
+                  <h4 class="fw-semibold mb-0 text-body-emphasis">
+                    Orientação Profissional
+                  </h4>
                 </div>
-                <h4 class="fw-semibold mb-0 text-body-emphasis">
-                  Orientação Profissional
-                </h4>
                 <p class="text-body-secondary">
                   Para quem busca redirecionamento de carreira, sentido no
                   trabalho ou gestão de conflitos profissionais.
@@ -221,6 +235,7 @@
 
     <section
       class="attendance-and-call-to-action row my-5 justify-content-center align-items-center"
+      id="attendance-and-call-to-action"
     >
       <div
         class="row flex-row-reverse g-5 flex-row justify-content-center align-items-center"
@@ -234,7 +249,7 @@
               <ul class="list-unstyled row flex-column gap-2">
                 <li>
                   <div
-                    class="rounded-2 d-flex align-items-start gap-2 py-2 px-3 lh-sm text-start"
+                    class="rounded-2 d-flex align-items-center gap-3 py-2 px-3 lh-sm text-start"
                   >
                     <div
                       class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-2 p-2"
@@ -260,7 +275,7 @@
                 </li>
                 <li>
                   <div
-                    class="rounded-2 d-flex align-items-start gap-2 py-2 px-3 lh-sm text-start"
+                    class="rounded-2 d-flex align-items-center gap-3 py-2 px-3 lh-sm text-start"
                   >
                     <div
                       class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-2 p-2"
@@ -286,7 +301,7 @@
                 </li>
                 <li>
                   <div
-                    class="rounded-2 d-flex align-items-start gap-2 py-2 px-3 lh-sm text-start"
+                    class="rounded-2 d-flex align-items-center gap-3 py-2 px-3 lh-sm text-start"
                   >
                     <div
                       class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-2 p-2"
@@ -330,20 +345,25 @@
               Vamos conversar?
             </p>
           </div>
-          <a class="btn btn-primary text-start fit-content">
-            Agendar consulta agora
+          <a
+            href="https://wa.me/19953287981"
+            target="_blank"
+            class="btn btn-primary text-start fit-content"
+          >
+            Iniciar uma conversa
           </a>
         </div>
       </div>
     </section>
 
-    <div class="container col-8 mt-5">
+    <div class="container col-8 mt-5 d-flex justify-content-center">
       <footer
-        class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top"
+        class="row w-100 row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top"
       >
         <div class="col mb-3">
           <a
-            href="/"
+            href="https://wa.me/19953287981"
+            target="_blank"
             class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none"
             aria-label="Bootstrap"
           >
@@ -360,39 +380,60 @@
           <h5>Section</h5>
           <ul class="nav flex-column">
             <li class="nav-item mb-2">
-              <a href="#" class="nav-link p-0 text-body-secondary">Home</a>
+              <a href="#hero-section" class="nav-link p-0 text-body-secondary"
+                >Home</a
+              >
             </li>
             <li class="nav-item mb-2">
-              <a href="#" class="nav-link p-0 text-body-secondary">Features</a>
+              <a
+                href="#services-offered"
+                class="nav-link p-0 text-body-secondary"
+                >Serviços</a
+              >
             </li>
             <li class="nav-item mb-2">
-              <a href="#" class="nav-link p-0 text-body-secondary">Pricing</a>
+              <a
+                href="#professional-presentation"
+                class="nav-link p-0 text-body-secondary"
+                >Sobre</a
+              >
             </li>
             <li class="nav-item mb-2">
-              <a href="#" class="nav-link p-0 text-body-secondary">FAQs</a>
+              <a
+                href="#attendance-and-call-to-action"
+                class="nav-link p-0 text-body-secondary"
+                >Atendimento</a
+              >
             </li>
-            <li class="nav-item mb-2">
+            <!-- <li class="nav-item mb-2">
               <a href="#" class="nav-link p-0 text-body-secondary">About</a>
-            </li>
+            </li> -->
           </ul>
         </div>
         <div class="col mb-3">
-          <h5>Section</h5>
+          <h5>Contato</h5>
           <ul class="nav flex-column">
             <li class="nav-item mb-2">
-              <a href="#" class="nav-link p-0 text-body-secondary">Home</a>
+              <a href="#" class="nav-link p-0 text-body-secondary"
+                >E-mail: edeucleiam@gmail.com</a
+              >
             </li>
             <li class="nav-item mb-2">
-              <a href="#" class="nav-link p-0 text-body-secondary">Features</a>
+              <a href="#" class="nav-link p-0 text-body-secondary"
+                >Celular: 19 95328-7981</a
+              >
             </li>
             <li class="nav-item mb-2">
-              <a href="#" class="nav-link p-0 text-body-secondary">Pricing</a>
-            </li>
+              <a href="#" class="nav-link p-0 text-body-secondary"
+                >Instagram: @name_instagram</a
+              >
+              <!-- </li>
             <li class="nav-item mb-2">
               <a href="#" class="nav-link p-0 text-body-secondary">FAQs</a>
             </li>
             <li class="nav-item mb-2">
               <a href="#" class="nav-link p-0 text-body-secondary">About</a>
+            </li> -->
             </li>
           </ul>
         </div>

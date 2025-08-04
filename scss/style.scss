@@ -3,6 +3,17 @@
   src: url("../font/Cramaten.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: "Montserrat";
+  src: url("../font/Montserrat/Montserrat-VariableFont_wght.ttf")
+    format("truetype");
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../font/Poppins/Poppins-SemiBold.ttf") format("truetype");
+}
+
 .montserrat {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
@@ -43,10 +54,18 @@ $dark: #2e2a26;
   @extend .montserrat;
 }
 
-// body {
-//   overflow-x: hidden;
-//   max-width: 100vw;
-// }
+body {
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.bg-2 {
+  background-color: $color-sand;
+}
+
+section {
+  scroll-margin-top: 20vh;
+}
 
 img {
   object-fit: contain;
@@ -57,6 +76,13 @@ h1,
   color: $dark;
   font-family: "Cramaten", sans-serif;
   letter-spacing: 0.2rem;
+}
+
+h2,
+.ff-poppins {
+  font-family: "Poppins", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
 
 p {
@@ -78,9 +104,13 @@ p {
   width: fit-content;
 }
 
+.ff-cramaten {
+  font-family: "Cramaten", sans-serif;
+}
+
 .hero-section {
   background-color: $color-tan;
-  min-height: 95vh;
+  min-height: 60vh;
 
   img {
     $size: 500px;
@@ -93,16 +123,16 @@ p {
   }
 }
 
+.professional-presentation {
+  a {
+    text-decoration: none;
+  }
+}
+
 .section-target-audience {
   .card {
-    // min-width: 540px;
-
     h1 {
       font-size: 4rem;
-    }
-
-    img {
-      // max-width: 240px;
     }
   }
 
@@ -136,45 +166,24 @@ p {
   }
 }
 
-// .attendance-and-call-to-action {
-//   svg {
-//     fill: $light;
-//   }
-// }
+.about-my-background {
+  h1 {
+    color: $primary;
 
-// @media (max-width: 1340px) {
-//   .section-target-audience {
-//     .cards-wrapper {
-//       flex-direction: column !important;
-//       justify-content: center;
-//       align-items: center;
-//     }
+    font-size: 4rem;
+  }
 
-//     .card {
-//       max-width: 84vw;
-//       width: 100%;
-//       justify-content: center;
+  h2 {
+    color: $color-yellow-mustard;
+  }
 
-//       margin-bottom: 1rem;
-//       top: 40px;
+  a {
+    text-decoration: none;
+  }
 
-//       p {
-//         max-width: 100%;
-//       }
-
-//       .wrp-img {
-//         height: 300px;
-//         width: 100%;
-//         max-height: none;
-//       }
-
-//       img {
-//         height: 400px;
-//         top: -20px;
-//         left: 0;
-//       }
-//     }
-//   }
-// }
+  img {
+    width: 100%;
+  }
+}
 
 @import "../node_modules/bootstrap/scss/bootstrap";

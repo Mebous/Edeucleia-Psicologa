@@ -3,10 +3,31 @@
   font-family: "Cramaten";
   src: url("../font/Cramaten.ttf") format("truetype");
 }
+@font-face {
+  font-family: "Montserrat";
+  src: url("../font/Montserrat/Montserrat-VariableFont_wght.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../font/Poppins/Poppins-SemiBold.ttf") format("truetype");
+}
 .montserrat, * {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
+}
+
+body {
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.bg-2 {
+  background-color: #e5e0d8;
+}
+
+section {
+  scroll-margin-top: 20vh;
 }
 
 img {
@@ -19,6 +40,13 @@ h1, .h1,
   color: #2e2a26;
   font-family: "Cramaten", sans-serif;
   letter-spacing: 0.2rem;
+}
+
+h2, .h2,
+.ff-poppins {
+  font-family: "Poppins", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
 
 p {
@@ -40,9 +68,13 @@ p {
   width: fit-content;
 }
 
+.ff-cramaten {
+  font-family: "Cramaten", sans-serif;
+}
+
 .hero-section {
   background-color: #e5d2b8;
-  min-height: 95vh;
+  min-height: 60vh;
 }
 .hero-section img {
   max-width: 500px;
@@ -50,6 +82,10 @@ p {
 }
 .hero-section h1, .hero-section .h1 {
   font-size: 8rem;
+}
+
+.professional-presentation a {
+  text-decoration: none;
 }
 
 .section-target-audience .card h1, .section-target-audience .card .h1 {
@@ -79,6 +115,20 @@ p {
 }
 .services-offered svg {
   fill: #f5f2ec;
+}
+
+.about-my-background h1, .about-my-background .h1 {
+  color: #4f6a4a;
+  font-size: 4rem;
+}
+.about-my-background h2, .about-my-background .h2 {
+  color: #c9a74e;
+}
+.about-my-background a {
+  text-decoration: none;
+}
+.about-my-background img {
+  width: 100%;
 }
 
 /*!
