@@ -35,6 +35,10 @@ img {
      object-fit: contain;
 }
 
+svg {
+  fill: #f5f2ec;
+}
+
 h1, .h1,
 .text-body-emphasis {
   color: #2e2a26;
@@ -43,7 +47,8 @@ h1, .h1,
 }
 
 h2, .h2,
-.ff-poppins {
+.ff-poppins,
+.professional-presentation a {
   font-family: "Poppins", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
@@ -98,7 +103,7 @@ p {
   background-color: #c9a74e;
 }
 .section-target-audience .card:nth-child(3) {
-  background-color: #4f6a4a;
+  background-color: #3f553b;
 }
 
 .btn-link {
@@ -110,11 +115,24 @@ p {
   background-image: url("../imgs/background-services-offered.jpg");
   box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 }
+.services-offered h1, .services-offered .h1 {
+  color: #3f553b !important;
+  font-size: 3.2rem;
+}
+.services-offered h2, .services-offered .h2 {
+  color: #3f553b !important;
+  font-size: 2rem;
+}
 .services-offered .container {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
-.services-offered svg {
-  fill: #f5f2ec;
+
+.attendance-and-call-to-action .card {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.attendance-and-call-to-action .card h1, .attendance-and-call-to-action .card .h1 {
+  color: #3f553b !important;
+  font-size: 3rem;
 }
 
 .about-my-background h1, .about-my-background .h1 {

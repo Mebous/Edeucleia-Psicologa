@@ -39,7 +39,7 @@ $color-brown: hsl(36, 33%, 34%);
 // Cores principais
 $color-red-earth: #a14d4d; // terroso, queimado
 $color-yellow-mustard: #c9a74e; // mostarda suave
-$color-green-olive-dark: #4f6a4a; // oliva escuro
+$color-green-olive-dark: #3f553b; // oliva escuro
 
 // Versões claras
 $color-red-light: #e0c5c5;
@@ -69,6 +69,10 @@ section {
 
 img {
   object-fit: contain;
+}
+
+svg {
+  fill: $color-beige;
 }
 
 h1,
@@ -125,6 +129,7 @@ p {
 
 .professional-presentation {
   a {
+    @extend .ff-poppins;
     text-decoration: none;
   }
 }
@@ -154,15 +159,31 @@ p {
 
 .services-offered {
   background-image: url("../imgs/background-services-offered.jpg");
-
   box-shadow: $box-shadow-inset;
+
+  h1 {
+    color: $color-green-olive-dark !important;
+    font-size: 3.2rem;
+  }
+
+  h2 {
+    color: $color-green-olive-dark !important;
+    font-size: 2rem;
+  }
 
   .container {
     box-shadow: $box-shadow-regular;
   }
+}
 
-  svg {
-    fill: $color-beige;
+.attendance-and-call-to-action {
+  .card {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+    h1 {
+      color: $color-green-olive-dark !important;
+      font-size: 3rem;
+    }
   }
 }
 
