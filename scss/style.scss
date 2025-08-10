@@ -158,7 +158,9 @@ p {
 }
 
 .services-offered {
-  background-image: url("../imgs/background-services-offered.jpg");
+  background-image: url("../imgs/background-services-offered.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
   box-shadow: $box-shadow-inset;
 
   h1 {
